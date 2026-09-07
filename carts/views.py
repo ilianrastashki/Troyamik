@@ -46,7 +46,7 @@ def add_cart(request, product_id):
                 index = ex_var_list.index(product_variation)
                 item_id = id[index]
                 item = CartItem.objects.get(product=product, id=item_id)
-                item.quantity += 1
+                item.quantity += product.order_step
                 item.save()
 
             else:
@@ -109,7 +109,7 @@ def add_cart(request, product_id):
                 index = ex_var_list.index(product_variation)
                 item_id = id[index]
                 item = CartItem.objects.get(product=product, id=item_id)
-                item.quantity += 1
+                item.quantity += product.order_step
                 item.save()
 
             else:
@@ -141,8 +141,9 @@ def remove_cart(request, product_id, cart_item_id):
             cart = Cart.objects.get(cart_id=_cart_id(request))  # remove when not logged in
             cart_item = CartItem.objects.get(product=product, cart=cart, id=cart_item_id)
         minimum = product.min_order_quantity
-        if cart_item.quantity - 1 >= minimum:
-            cart_item.quantity -= 1
+        step = product.order_step
+        if cart_item.quantity - step >= minimum:
+            cart_item.quantity -= step
             cart_item.save()
         else:
             # под минимума за поръчка няма смисъл - махаме артикула изцяло

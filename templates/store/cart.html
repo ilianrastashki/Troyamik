@@ -65,7 +65,7 @@
                                 </form>
                             </div>
                         </div> <!-- input-group.// -->
-                        <small class="text-muted">мин. {{ cart_item.product.min_order_quantity }} бр.</small>
+                        <small class="text-muted">мин. {{ cart_item.product.min_order_quantity }} бр.{% if cart_item.product.order_step > 1 %} · по {{ cart_item.product.order_step }}{% endif %}</small>
                     </div> <!-- col.// -->
     </td>
     <td> 

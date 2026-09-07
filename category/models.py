@@ -14,6 +14,17 @@ class Category(models.Model):
         verbose_name='минимална поръчка (бр.)',
         help_text='Най-малкият брой, който клиентът може да поръча от продукт в тази категория.',
     )
+    sold_individually = models.BooleanField(
+        default=False,
+        verbose_name='продава се поединично',
+        help_text='Отметни за твърд алкохол. Тогава бутоните + и - в количката '
+                  'променят количеството с 1 бр. Иначе стъпката е равна на минималната поръчка.',
+    )
+
+    @property
+    def order_step(self):
+        """С колко броя се увеличава/намалява количеството в количката."""
+        return 1 if self.sold_individually else max(1, self.min_order_quantity)
 
     class Meta:
         verbose_name = 'category'

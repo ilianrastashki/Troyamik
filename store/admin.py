@@ -9,9 +9,15 @@ class ProductGalleryInline(admin.TabularInline):
     extra = 1
 
 class ProductAdmin(admin.ModelAdmin):
-    list_display = ('product_name', 'price', 'stock', 'category', 'modified_date', 'is_available')
+    list_display = ('product_name', 'price', 'stock', 'category', 'minimum', 'modified_date', 'is_available')
     prepopulated_fields = {'slug': ('product_name',)}
     inlines = [ProductGalleryInline]
+
+    @admin.display(description='мин. поръчка', ordering='min_order_quantity_override')
+    def minimum(self, obj):
+        if obj.has_custom_minimum:
+            return f'{obj.min_order_quantity} бр. (за продукта)'
+        return f'{obj.min_order_quantity} бр. (от категорията)'
 
     # азбучна подредба (Lower() -> и продукти с малка буква застават на място)
     ordering = (Lower('product_name'),)

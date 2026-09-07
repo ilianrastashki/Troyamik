@@ -10,11 +10,17 @@ class Product(models.Model):
     product_name    = models.CharField(max_length=200, unique=True)
     slug            = models.SlugField(max_length=200, unique=True)
     description     = models.TextField(max_length=200, blank=True)
-    price           = models.IntegerField()
+    price           = models.DecimalField(max_digits=8, decimal_places=2)  # напр. 2.49 лв./€
     images          = models.ImageField(upload_to = 'photos/products')
     stock           = models.IntegerField()
     is_available    = models.BooleanField(default=True)
     category        = models.ForeignKey(Category, on_delete=models.CASCADE)
+    # минимум само за този продукт; празно = важи минимумът на категорията
+    min_order_quantity_override = models.PositiveIntegerField(
+        null=True, blank=True,
+        verbose_name='минимална поръчка (бр.)',
+        help_text='Остави празно, за да важи минимумът на категорията.',
+    )
     created_date    = models.DateTimeField(auto_now_add=True) # or auto_add_now=True
     modified_date   = models.DateTimeField(auto_now = True)
 
@@ -26,8 +32,21 @@ class Product(models.Model):
 
     @property
     def min_order_quantity(self):
-        """Минималното количество се определя от категорията (напр. 12 бр. безалкохолни, 6 бр. алкохолни)."""
+        """Минимумът на продукта, ако е зададен; иначе този на категорията."""
+        if self.min_order_quantity_override:
+            return max(1, self.min_order_quantity_override)
         return max(1, self.category.min_order_quantity)
+
+    @property
+    def has_custom_minimum(self):
+        return bool(self.min_order_quantity_override)
+
+    @property
+    def order_step(self):
+        """Стъпка на бутоните + / - в количката: 1 бр. за твърд алкохол, иначе минималното количество."""
+        if self.category.sold_individually:
+            return 1
+        return self.min_order_quantity
     
     def averageReview(self):
         reviews = ReviewRating.objects.filter(product=self, status=True).aggregate(average=Avg('rating'))

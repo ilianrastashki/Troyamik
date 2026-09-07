@@ -63,3 +63,16 @@ ul.thumb li img{
 
 
 
+
+/* Количка: при търговия на едро количествата са трицифрени, а темата
+   ограничава полето до 46px и контейнера до 125px, така че числото се реже. */
+.input-spinner {
+    width: auto;
+}
+.input-spinner input.form-control {
+    min-width: 68px;
+    max-width: 68px;
+    flex-basis: 68px;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+}

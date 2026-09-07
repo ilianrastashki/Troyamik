@@ -191,3 +191,6 @@ staticfiles/
 static/images/banners/cover2-smartbar-backup.png
 static/images/banners/cover2.png
 static/images/logo-smartbar-backup.png
+
+# пълен износ на базата - съдържа акаунти, хешове на пароли и адреси
+fixtures/full_dump.json
