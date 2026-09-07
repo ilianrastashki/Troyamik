@@ -1,0 +1,726 @@
+[
+{
+  "model": "category.category",
+  "pk": 8,
+  "fields": {
+    "category_name": "Газирани напитки",
+    "slug": "gazirani-napitki",
+    "description": "Кока-Кола, Фанта, Спрайт, Швепс и други газирани безалкохолни напитки.",
+    "cat_image": "photos/categories/gazirani-napitki.jpg",
+    "min_order_quantity": 12
+  }
+},
+{
+  "model": "category.category",
+  "pk": 9,
+  "fields": {
+    "category_name": "Студен чай",
+    "slug": "studen-chay",
+    "description": "Изстудени чайове с плодов вкус - праскова, лимон, горски плодове.",
+    "cat_image": "photos/categories/studen-chay.jpg",
+    "min_order_quantity": 12
+  }
+},
+{
+  "model": "category.category",
+  "pk": 10,
+  "fields": {
+    "category_name": "Минерална вода",
+    "slug": "mineralna-voda",
+    "description": "Изворна и минерална вода в различни разфасовки.",
+    "cat_image": "photos/categories/mineralna-voda.jpg",
+    "min_order_quantity": 12
+  }
+},
+{
+  "model": "category.category",
+  "pk": 11,
+  "fields": {
+    "category_name": "Сокове",
+    "slug": "sokove",
+    "description": "Натурални и нектарни сокове от плодове.",
+    "cat_image": "photos/categories/sokove.jpg",
+    "min_order_quantity": 12
+  }
+},
+{
+  "model": "category.category",
+  "pk": 12,
+  "fields": {
+    "category_name": "Енергийни напитки",
+    "slug": "energiyni-napitki",
+    "description": "Енергийни напитки за дълъг ден и нощни смени.",
+    "cat_image": "photos/categories/energiyni-napitki.jpg",
+    "min_order_quantity": 12
+  }
+},
+{
+  "model": "category.category",
+  "pk": 13,
+  "fields": {
+    "category_name": "Бира",
+    "slug": "bira",
+    "description": "Българска и вносна бира - лагер, тъмна и специални серии.",
+    "cat_image": "photos/categories/bira.jpg",
+    "min_order_quantity": 6
+  }
+},
+{
+  "model": "category.category",
+  "pk": 14,
+  "fields": {
+    "category_name": "Сайдер",
+    "slug": "sayder",
+    "description": "Ябълкови и плодови сайдери.",
+    "cat_image": "photos/categories/sayder.jpg",
+    "min_order_quantity": 6
+  }
+},
+{
+  "model": "category.category",
+  "pk": 15,
+  "fields": {
+    "category_name": "Вино",
+    "slug": "vino",
+    "description": "Червени, бели и розе вина от български и вносни изби.",
+    "cat_image": "photos/categories/vino.jpg",
+    "min_order_quantity": 6
+  }
+},
+{
+  "model": "category.category",
+  "pk": 16,
+  "fields": {
+    "category_name": "Водка",
+    "slug": "vodka",
+    "description": "Премиум водка от Швеция, Финландия и Русия.",
+    "cat_image": "photos/categories/vodka.jpg",
+    "min_order_quantity": 6
+  }
+},
+{
+  "model": "category.category",
+  "pk": 17,
+  "fields": {
+    "category_name": "Уиски",
+    "slug": "uiski",
+    "description": "Шотландско, ирландско и американско уиски.",
+    "cat_image": "photos/categories/uiski.jpg",
+    "min_order_quantity": 6
+  }
+},
+{
+  "model": "category.category",
+  "pk": 18,
+  "fields": {
+    "category_name": "Ракия",
+    "slug": "rakiya",
+    "description": "Българска гроздова, мускатова и сливова ракия.",
+    "cat_image": "photos/categories/rakiya.jpg",
+    "min_order_quantity": 6
+  }
+},
+{
+  "model": "category.category",
+  "pk": 19,
+  "fields": {
+    "category_name": "test5",
+    "slug": "test5",
+    "description": "",
+    "cat_image": "",
+    "min_order_quantity": 12
+  }
+},
+{
+  "model": "store.product",
+  "pk": 26,
+  "fields": {
+    "product_name": "Кока-Кола 0.5 л",
+    "slug": "koka-kola-05",
+    "description": "Класическата Coca-Cola в PET бутилка 500 мл.",
+    "price": 2,
+    "images": "photos/products/koka-kola-05.jpg",
+    "stock": 240,
+    "is_available": true,
+    "category": 8,
+    "created_date": "2026-09-06T15:30:12.285Z",
+    "modified_date": "2026-09-06T15:30:12.285Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 27,
+  "fields": {
+    "product_name": "Кока-Кола Зеро 0.5 л",
+    "slug": "koka-kola-zero-05",
+    "description": "Coca-Cola Zero Sugar - същият вкус, без захар.",
+    "price": 2,
+    "images": "photos/products/koka-kola-zero-05.jpg",
+    "stock": 168,
+    "is_available": true,
+    "category": 8,
+    "created_date": "2026-09-06T15:30:12.293Z",
+    "modified_date": "2026-09-06T17:13:36.494Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 28,
+  "fields": {
+    "product_name": "Фанта Портокал 0.5 л",
+    "slug": "fanta-portokal-05",
+    "description": "Газирана напитка с вкус на портокал.",
+    "price": 2,
+    "images": "photos/products/fanta-portokal-05.jpg",
+    "stock": 200,
+    "is_available": true,
+    "category": 8,
+    "created_date": "2026-09-06T15:30:12.300Z",
+    "modified_date": "2026-09-06T15:30:12.300Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 29,
+  "fields": {
+    "product_name": "Спрайт 0.5 л",
+    "slug": "sprayt-05",
+    "description": "Освежаваща лимонада с вкус на лайм и лимон.",
+    "price": 2,
+    "images": "photos/products/sprayt-05.jpg",
+    "stock": 190,
+    "is_available": true,
+    "category": 8,
+    "created_date": "2026-09-06T15:30:12.308Z",
+    "modified_date": "2026-09-06T15:30:12.308Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 30,
+  "fields": {
+    "product_name": "Швепс Тоник 0.25 л",
+    "slug": "shveps-tonik-025",
+    "description": "Тоник за коктейли в стъклена бутилка 250 мл.",
+    "price": 2,
+    "images": "photos/products/shveps-tonik-025.jpg",
+    "stock": 150,
+    "is_available": true,
+    "category": 8,
+    "created_date": "2026-09-06T15:30:12.315Z",
+    "modified_date": "2026-09-06T15:30:12.315Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 31,
+  "fields": {
+    "product_name": "Фюзтий Праскова 0.5 л",
+    "slug": "fyuztiy-praskova",
+    "description": "Черен чай с вкус на праскова.",
+    "price": 2,
+    "images": "photos/products/fyuztiy-praskova.jpg",
+    "stock": 160,
+    "is_available": true,
+    "category": 9,
+    "created_date": "2026-09-06T15:30:12.323Z",
+    "modified_date": "2026-09-06T15:30:12.323Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 32,
+  "fields": {
+    "product_name": "Липтън Айс Тий Лимон 0.5 л",
+    "slug": "lipton-ays-tiy-limon",
+    "description": "Изстуден черен чай с лимон.",
+    "price": 2,
+    "images": "photos/products/lipton-ays-tiy-limon.jpg",
+    "stock": 170,
+    "is_available": true,
+    "category": 9,
+    "created_date": "2026-09-06T15:30:12.337Z",
+    "modified_date": "2026-09-06T15:30:12.337Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 33,
+  "fields": {
+    "product_name": "Нестий Горски плодове 0.5 л",
+    "slug": "nestiy-gorski-plodove",
+    "description": "Студен чай с вкус на горски плодове.",
+    "price": 2,
+    "images": "photos/products/nestiy-gorski-plodove.jpg",
+    "stock": 140,
+    "is_available": true,
+    "category": 9,
+    "created_date": "2026-09-06T15:30:12.344Z",
+    "modified_date": "2026-09-06T15:30:12.344Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 34,
+  "fields": {
+    "product_name": "Девин Минерална 1.5 л",
+    "slug": "devin-mineralna-15",
+    "description": "Българска минерална вода от Девин, 1.5 литра.",
+    "price": 1,
+    "images": "photos/products/devin-mineralna-15.jpg",
+    "stock": 400,
+    "is_available": true,
+    "category": 10,
+    "created_date": "2026-09-06T15:30:12.352Z",
+    "modified_date": "2026-09-06T15:30:12.352Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 35,
+  "fields": {
+    "product_name": "Банкя 1.5 л",
+    "slug": "bankya-15",
+    "description": "Минерална вода Банкя, 1.5 литра.",
+    "price": 1,
+    "images": "photos/products/bankya-15.jpg",
+    "stock": 380,
+    "is_available": true,
+    "category": 10,
+    "created_date": "2026-09-06T15:30:12.364Z",
+    "modified_date": "2026-09-06T15:30:12.364Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 36,
+  "fields": {
+    "product_name": "Горна Баня 0.5 л",
+    "slug": "gorna-banya-05",
+    "description": "Изворна вода Горна Баня, 500 мл.",
+    "price": 1,
+    "images": "photos/products/gorna-banya-05.jpg",
+    "stock": 420,
+    "is_available": true,
+    "category": 10,
+    "created_date": "2026-09-06T15:30:12.371Z",
+    "modified_date": "2026-09-06T15:30:12.371Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 37,
+  "fields": {
+    "product_name": "Капи Портокал 1 л",
+    "slug": "kapi-portokal-1l",
+    "description": "Нектар от портокал, 1 литър.",
+    "price": 3,
+    "images": "photos/products/kapi-portokal-1l.jpg",
+    "stock": 120,
+    "is_available": true,
+    "category": 11,
+    "created_date": "2026-09-06T15:30:12.378Z",
+    "modified_date": "2026-09-06T15:30:12.378Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 38,
+  "fields": {
+    "product_name": "Флорина Ябълка 1 л",
+    "slug": "florina-yabalka-1l",
+    "description": "Ябълков сок Флорина, 1 литър.",
+    "price": 3,
+    "images": "photos/products/florina-yabalka-1l.jpg",
+    "stock": 110,
+    "is_available": true,
+    "category": 11,
+    "created_date": "2026-09-06T15:30:12.391Z",
+    "modified_date": "2026-09-06T15:30:12.391Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 39,
+  "fields": {
+    "product_name": "Куинс Праскова 1 л",
+    "slug": "kuins-praskova-1l",
+    "description": "Нектар от праскова, 1 литър.",
+    "price": 3,
+    "images": "photos/products/kuins-praskova-1l.jpg",
+    "stock": 88,
+    "is_available": true,
+    "category": 11,
+    "created_date": "2026-09-06T15:30:12.404Z",
+    "modified_date": "2026-09-06T17:22:04.774Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 40,
+  "fields": {
+    "product_name": "Ред Бул 0.25 л",
+    "slug": "red-bul-025",
+    "description": "Red Bull енергийна напитка, кен 250 мл.",
+    "price": 2,
+    "images": "photos/products/red-bul-025.jpg",
+    "stock": 300,
+    "is_available": true,
+    "category": 12,
+    "created_date": "2026-09-06T15:30:12.411Z",
+    "modified_date": "2026-09-06T15:30:12.411Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 41,
+  "fields": {
+    "product_name": "Монстър Енерджи 0.5 л",
+    "slug": "monstar-enerdzhi-05",
+    "description": "Monster Energy, кен 500 мл.",
+    "price": 3,
+    "images": "photos/products/monstar-enerdzhi-05.jpg",
+    "stock": 220,
+    "is_available": true,
+    "category": 12,
+    "created_date": "2026-09-06T15:30:12.418Z",
+    "modified_date": "2026-09-06T15:30:12.418Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 42,
+  "fields": {
+    "product_name": "Хел Енерджи 0.25 л",
+    "slug": "hel-enerdzhi-025",
+    "description": "Hell Energy Drink, кен 250 мл.",
+    "price": 1,
+    "images": "photos/products/hel-enerdzhi-025.jpg",
+    "stock": 260,
+    "is_available": true,
+    "category": 12,
+    "created_date": "2026-09-06T15:30:12.427Z",
+    "modified_date": "2026-09-06T15:30:12.427Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 43,
+  "fields": {
+    "product_name": "Загорка Специално 0.5 л",
+    "slug": "zagorka-spetsialno",
+    "description": "Българско светло пиво Загорка Специално.",
+    "price": 1,
+    "images": "photos/products/zagorka-spetsialno.jpg",
+    "stock": 480,
+    "is_available": true,
+    "category": 13,
+    "created_date": "2026-09-06T15:30:12.434Z",
+    "modified_date": "2026-09-06T15:30:12.434Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 44,
+  "fields": {
+    "product_name": "Каменица 0.5 л",
+    "slug": "kamenitsa-05",
+    "description": "Българска светла бира Каменица.",
+    "price": 1,
+    "images": "photos/products/kamenitsa-05.jpg",
+    "stock": 460,
+    "is_available": true,
+    "category": 13,
+    "created_date": "2026-09-06T15:30:12.440Z",
+    "modified_date": "2026-09-06T15:30:12.440Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 45,
+  "fields": {
+    "product_name": "Хайнекен 0.33 л",
+    "slug": "hayneken-033",
+    "description": "Heineken premium lager в стъклена бутилка.",
+    "price": 2,
+    "images": "photos/products/hayneken-033.jpg",
+    "stock": 350,
+    "is_available": true,
+    "category": 13,
+    "created_date": "2026-09-06T15:30:12.447Z",
+    "modified_date": "2026-09-06T15:30:12.447Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 46,
+  "fields": {
+    "product_name": "Стела Артоа 0.5 л",
+    "slug": "stela-artoa-05",
+    "description": "Stella Artois - белгийски лагер.",
+    "price": 2,
+    "images": "photos/products/stela-artoa-05.jpg",
+    "stock": 320,
+    "is_available": true,
+    "category": 13,
+    "created_date": "2026-09-06T15:30:12.453Z",
+    "modified_date": "2026-09-06T15:30:12.453Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 47,
+  "fields": {
+    "product_name": "Корона Екстра 0.33 л",
+    "slug": "korona-ekstra-033",
+    "description": "Corona Extra - мексиканска бира.",
+    "price": 2,
+    "images": "photos/products/korona-ekstra-033.jpg",
+    "stock": 280,
+    "is_available": true,
+    "category": 13,
+    "created_date": "2026-09-06T15:30:12.461Z",
+    "modified_date": "2026-09-06T15:30:12.461Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 48,
+  "fields": {
+    "product_name": "Съмърсби Ябълка 0.33 л",
+    "slug": "samarsbi-yabalka",
+    "description": "Somersby Apple - ябълков сайдер.",
+    "price": 2,
+    "images": "photos/products/samarsbi-yabalka.jpg",
+    "stock": 200,
+    "is_available": true,
+    "category": 14,
+    "created_date": "2026-09-06T15:30:12.470Z",
+    "modified_date": "2026-09-06T15:30:12.470Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 49,
+  "fields": {
+    "product_name": "Стронгбоу Голд 0.33 л",
+    "slug": "strongbou-gold",
+    "description": "Strongbow Gold Apple - сух ябълков сайдер.",
+    "price": 2,
+    "images": "photos/products/strongbou-gold.jpg",
+    "stock": 180,
+    "is_available": true,
+    "category": 14,
+    "created_date": "2026-09-06T15:30:12.476Z",
+    "modified_date": "2026-09-06T15:30:12.476Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 50,
+  "fields": {
+    "product_name": "Савана Драй 0.33 л",
+    "slug": "savana-dray",
+    "description": "Savanna Dry - премиум сайдер от Южна Африка.",
+    "price": 3,
+    "images": "photos/products/savana-dray.jpg",
+    "stock": 120,
+    "is_available": true,
+    "category": 14,
+    "created_date": "2026-09-06T15:30:12.483Z",
+    "modified_date": "2026-09-06T15:30:12.483Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 51,
+  "fields": {
+    "product_name": "Каберне Совиньон 0.75 л",
+    "slug": "kaberne-sovinyon",
+    "description": "Червено сухо вино, сорт Каберне Совиньон.",
+    "price": 8,
+    "images": "photos/products/kaberne-sovinyon.jpg",
+    "stock": 90,
+    "is_available": true,
+    "category": 15,
+    "created_date": "2026-09-06T15:30:12.490Z",
+    "modified_date": "2026-09-06T15:30:12.490Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 52,
+  "fields": {
+    "product_name": "Мерло 0.75 л",
+    "slug": "merlo",
+    "description": "Червено сухо вино, сорт Мерло.",
+    "price": 6,
+    "images": "photos/products/merlo.jpg",
+    "stock": 85,
+    "is_available": true,
+    "category": 15,
+    "created_date": "2026-09-06T15:30:12.498Z",
+    "modified_date": "2026-09-06T15:30:12.498Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 53,
+  "fields": {
+    "product_name": "Совиньон Блан 0.75 л",
+    "slug": "sovinyon-blan",
+    "description": "Бяло сухо вино, Совиньон Блан.",
+    "price": 7,
+    "images": "photos/products/sovinyon-blan.jpg",
+    "stock": 80,
+    "is_available": true,
+    "category": 15,
+    "created_date": "2026-09-06T15:30:12.506Z",
+    "modified_date": "2026-09-06T15:30:12.506Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 54,
+  "fields": {
+    "product_name": "Абсолют Водка 0.7 л",
+    "slug": "absolyut-vodka-07",
+    "description": "Absolut Vodka - шведска премиум водка.",
+    "price": 15,
+    "images": "photos/products/absolyut-vodka-07.jpg",
+    "stock": 60,
+    "is_available": true,
+    "category": 16,
+    "created_date": "2026-09-06T15:30:12.516Z",
+    "modified_date": "2026-09-06T15:30:12.516Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 55,
+  "fields": {
+    "product_name": "Смирноф Ред 0.7 л",
+    "slug": "smirnof-red-07",
+    "description": "Smirnoff Red Label - тройно дестилирана водка.",
+    "price": 13,
+    "images": "photos/products/smirnof-red-07.jpg",
+    "stock": 70,
+    "is_available": true,
+    "category": 16,
+    "created_date": "2026-09-06T15:30:12.524Z",
+    "modified_date": "2026-09-06T15:30:12.524Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 56,
+  "fields": {
+    "product_name": "Финландия 0.7 л",
+    "slug": "finlandiya-07",
+    "description": "Finlandia Vodka - финландска водка от ечемик.",
+    "price": 14,
+    "images": "photos/products/finlandiya-07.jpg",
+    "stock": 55,
+    "is_available": true,
+    "category": 16,
+    "created_date": "2026-09-06T15:30:12.531Z",
+    "modified_date": "2026-09-06T15:30:12.531Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 57,
+  "fields": {
+    "product_name": "Джони Уокър Ред 0.7 л",
+    "slug": "dzhoni-uokar-red",
+    "description": "Johnnie Walker Red Label - шотландско блендирано уиски.",
+    "price": 20,
+    "images": "photos/products/dzhoni-uokar-red.jpg",
+    "stock": 50,
+    "is_available": true,
+    "category": 17,
+    "created_date": "2026-09-06T15:30:12.538Z",
+    "modified_date": "2026-09-06T15:30:12.538Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 58,
+  "fields": {
+    "product_name": "Джеймсън 0.7 л",
+    "slug": "dzheymsan-07",
+    "description": "Jameson Irish Whiskey - тройно дестилирано.",
+    "price": 24,
+    "images": "photos/products/dzheymsan-07.jpg",
+    "stock": 45,
+    "is_available": true,
+    "category": 17,
+    "created_date": "2026-09-06T15:30:12.545Z",
+    "modified_date": "2026-09-06T15:30:12.545Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 59,
+  "fields": {
+    "product_name": "Балантайнс Файнест 0.7 л",
+    "slug": "balantayns-faynest",
+    "description": "Ballantine's Finest - шотландско блендирано уиски.",
+    "price": 18,
+    "images": "photos/products/balantayns-faynest.jpg",
+    "stock": 48,
+    "is_available": true,
+    "category": 17,
+    "created_date": "2026-09-06T15:30:12.552Z",
+    "modified_date": "2026-09-06T15:30:12.552Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 60,
+  "fields": {
+    "product_name": "Пещерска Гроздова 0.7 л",
+    "slug": "peshterska-grozdova",
+    "description": "Българска гроздова ракия, 40%.",
+    "price": 12,
+    "images": "photos/products/peshterska-grozdova.jpg",
+    "stock": 65,
+    "is_available": true,
+    "category": 18,
+    "created_date": "2026-09-06T15:30:12.558Z",
+    "modified_date": "2026-09-06T15:30:12.558Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 61,
+  "fields": {
+    "product_name": "Бургас 63 Мускатова 0.7 л",
+    "slug": "burgas-63-muskatova",
+    "description": "Мускатова ракия Бургас 63.",
+    "price": 16,
+    "images": "photos/products/burgas-63-muskatova.jpg",
+    "stock": 40,
+    "is_available": true,
+    "category": 18,
+    "created_date": "2026-09-06T15:30:12.572Z",
+    "modified_date": "2026-09-06T15:30:12.572Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 62,
+  "fields": {
+    "product_name": "Сунгурларе Мускатова 0.7 л",
+    "slug": "sungurlare-muskatova",
+    "description": "Мускатова ракия от Сунгурларе.",
+    "price": 13,
+    "images": "photos/products/sungurlare-muskatova.jpg",
+    "stock": 0,
+    "is_available": true,
+    "category": 18,
+    "created_date": "2026-09-06T15:30:12.584Z",
+    "modified_date": "2026-09-06T16:07:10.762Z"
+  }
+}
+]
